@@ -14,17 +14,28 @@
 
 		<script>
 		$(document).ready(function(){
-		    $("#hide").click(function(){
-		        $("#pik").hide();
+		    $("#hide1").click(function(){
+		        $(".hidden").hide();
 		    });
-		    $("#show").click(function(){
-		        $("#pik").show();
+		    $("#hide2").click(function(){
+		        $(".hidden").hide();
 		    });
-		    	    $("#show1").click(function(){
-		        $("#pik").show();
+		    $("#hide3").click(function(){
+		        $(".hidden").hide();
 		    });
-		    	    	    $("#show2").click(function(){
-		        $("#pik").show();
+
+			$("#show").click(function() {
+				$(".hidden").hide();
+				$("#hidden-div-estudante").show();
+			});
+
+		    $("#show1").click(function(){
+		    	$(".hidden").hide();
+		        $("#hidden-div-solidario").show();
+		    });
+		    $("#show2").click(function(){
+		    	$(".hidden").hide();
+		        $("#hidden-div-viagem").show();
 		    });
 		});
 		</script>
@@ -39,9 +50,9 @@
 					<nav id="nav">
 						<a href="index.html">HOME</a>
 						<a href="index.html#three">PACOTES</a>
-						<a href="generic.html">LINKS</a>
+						<a href="links.html">LINKS</a>
 						<a href="index.html#footer">CONTATO</a>
-						<a href="#" class="icon fa fa-facebook-square" style="font-size: 20px;"><span class="label">Facebook</span></a>
+						<a href="https://www.facebook.com/excursoesdalulu/" target="_blank" class="icon fa fa-facebook-square" style="font-size: 20px;"><span class="label">Facebook</span></a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -97,7 +108,7 @@
 					<div class="flex flex-3">
 						<article>
 							<div class="image round">
-								<img src="images/pic_1.png" alt="Pic 01" />
+								<img src="images/ESTUDANTE.png" alt="Pic 01" />
 							</div>
 							<header>
 								<h3>PACOTE ESTUDANTE</h3>
@@ -110,7 +121,7 @@
 						</article>
 						<article>
 							<div class="image round">
-								<img src="images/pic_2.png" alt="Pic 02" />
+								<img src="images/SOLIDARIO.png" alt="Pic 02" />
 							</div>
 							<header>
 								<h3>PACOTE SOLIDÁRIO</h3>
@@ -118,12 +129,12 @@
 							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
 							<footer>
 								<a href="#" class="button">COMPRAR NO CARTÃO</a><br/><br/>
-								<button id="show1">COMPRAR NO DEPÓSITO</button>
+								<button id="show1" href="www">COMPRAR NO DEPÓSITO</button>
 							</footer>
 						</article>
 						<article>
 							<div class="image round">
-								<img src="images/pic_3.png" alt="Pic 01" />
+								<img src="images/TRANSPORTE.png" alt="Pic 01" />
 							</div>
 							<header>
 								<h3>SOMENTE TRANSPORTE</h3>
@@ -139,9 +150,9 @@
 				</div>
 
 			</section>
-				<div id="pik" class="hidden">
+				<div id="hidden-div-estudante" class="hidden">
 					<br/>
-					<h1>Dados para Depósito</h1>
+					<h1>Dados para Depósito 1</h1>
 					Banco xxxx<br/>
 					Tipo: Poupança (operação 013)<br/>
 					Agência: xxx<br/>
@@ -149,7 +160,33 @@
 					Titular: Luene Marjorie Boldrin<br/>
 
 					<br/>
-					<button id="hide">FECHAR</button><br/>
+					<button id="hide1">FECHAR</button><br/>
+					<br/>
+				</div>
+				<div id="hidden-div-solidario" class="hidden">
+					<br/>
+					<h1>Dados para Depósito 2</h1>
+					Banco xxxx<br/>
+					Tipo: Poupança (operação 013)<br/>
+					Agência: xxx<br/>
+					Conta: xxx<br/>
+					Titular: Luene Marjorie Boldrin<br/>
+
+					<br/>
+					<button id="hide2">FECHAR</button><br/>
+					<br/>
+				</div>
+				<div id="hidden-div-viagem" class="hidden">
+					<br/>
+					<h1>Dados para Depósito 3</h1>
+					Banco xxxx<br/>
+					Tipo: Poupança (operação 013)<br/>
+					Agência: xxx<br/>
+					Conta: xxx<br/>
+					Titular: Luene Marjorie Boldrin<br/>
+
+					<br/>
+					<button id="hide3">FECHAR</button><br/>
 					<br/>
 				</div>
 		<!-- Footer -->
@@ -159,20 +196,20 @@
 					<div class="row">
 							<div class="4u 12u$(medium)">
 								<div class="image">
-									<img src="images/new_logo.png" alt="Pic 02" />
+									<img src="images/LULU.png" alt="Pic 02" />
 								</div>
 								<p>
 									<br />Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis.</p>
 							</div>
 							<div class="4u 12u$(medium)">
 								<div class="image">
-									<img src="images/pic2.png" alt="Pic 02" />
+									<img src="images/JR.png" alt="Pic 02" />
 								</div>
 								<p><br />Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 							</div>
 							<div class="4u$ 12u$(medium)">
-								<div class="image round">
-									<img src="images/ct.png" alt="Pic 02" />
+								<div class="image">
+									<img src="images/CONTATO.png" alt="Pic 02" />
 								</div>
 								<p><br />Para obter informações atualizadas sobre o seu pedido ou mudar alguma coisa em um pedido efetuado, entre em contato com o nosso atendimento:<br /><br />
 									
@@ -185,10 +222,12 @@
 					<hr class="major" />
 
 					<div class="copyright">
-						&copy; Excursões da Lulu. Excursão João Rock 2018 (Parceira Oficial).
-						<ul class="icons">
-						<li><a href="#"><span class="label"><img src="images/face-favv1.png"></span></a></li>
-						</ul>
+
+
+						<p style="font-family: 'meow_lu'"><a href="https://www.facebook.com/excursoesdalulu/" target="_blank">ACESSE O NOSSO FACEBOOK</a></p>
+
+						&copy; Excursões da Lulu. Excursão João Rock 2018 (Parceira Oficial).<br />
+
 					</div>
 
 				</div>
