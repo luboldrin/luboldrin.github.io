@@ -3125,7 +3125,7 @@
 
 	#three h2 {
 		color: #f43b5a;
-	    margin-bottom: 2em !important;
+	    margin-bottom: -1em !important;
 	    font-weight: bold;
 	    font-family: "meow_lu";
 	    font-size: 48px;
@@ -3211,6 +3211,7 @@
 		  display: none;
 		  background-color: #f43b5a;
 		  margin-top: 50px;
+		  text-align: center;
 		}
 
 		  .hidden h1{
