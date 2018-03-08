@@ -2533,7 +2533,7 @@
 		background-color: #ffec01;
 		color: #5d2181 !important;
 		border-radius: 30px;
-		border: 0;
+		border: none !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: .75em;
