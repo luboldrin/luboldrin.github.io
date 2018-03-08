@@ -2533,7 +2533,8 @@
 		background-color: #ffec01;
 		color: #5d2181 !important;
 		border-radius: 30px;
-		border: none !important;
+		border: 0;
+		outline: none;
 		cursor: pointer;
 		display: inline-block;
 		font-size: .75em;
