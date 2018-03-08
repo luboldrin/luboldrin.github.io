@@ -1551,6 +1551,11 @@
 
 /* Basic */
 
+	@font-face {
+	    font-family: 'meow_lu';
+	    src: url('../fonts/MuseoSans_1.otf');
+	}
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -2525,8 +2530,8 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #9021d5;
-		color: #ffec01 !important;
+		background-color: #ffec01;
+		color: #5d2181 !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2541,7 +2546,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-    	font-family: "Museo Sans", sans-serif;
+    	font-family: "meow_lu";
 	}
 
 		input[type="submit"]:hover,
@@ -2549,7 +2554,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #761d80;
+			background-color: #efde16;
 		}
 
 		input[type="submit"]:active,
@@ -2697,7 +2702,7 @@
 	}
 
 		.subpage #header {
-			background: rgba(156,49,223,0.975);;
+			background: #5d2181;
 			top: 0;
 			height: 60px;
 			line-height: 3.25em;
@@ -2714,7 +2719,7 @@
 		text-align: right;
 		width: 100%;
 		z-index: 10001;
-		background-color: rgba(156,49,223,0.975);
+		background-color: #5d2181;
 	}
 
 		#header .inner {
@@ -2752,7 +2757,7 @@
 			text-decoration: none;
 			font-size: 1em;
 
-			font-family: "Museo Sans", sans-serif;
+			font-family: "meow_lu";
 		    font-weight: bold;
 		    text-transform: uppercase;
 		}
@@ -2948,12 +2953,12 @@
 
 		#banner h1 {
 			font-size: 3em;
-			color: #ffec01;
+			color: #fff;
 			line-height: 2em;
 			margin: 0 0 1em 0;
 			padding: 0;
 			font-weight: bold;
-			font-family: "Museo Sans", sans-serif;
+			font-family: "meow_lu";
 		}
 
 		#banner h3 {
@@ -2961,6 +2966,7 @@
 			color: #fff;
 			margin: 0;
 			font-size: 1.5em;
+			font-family: "meow_lu";
 		}
 
 		#banner .icon {
@@ -3114,22 +3120,22 @@
 /* Three */
 
 	#three {
-		background-color: #4180ff;
+		background-color: #fff;
 	}
 
 	#three h2 {
-		color: #ffec01;
+		color: #f43b5a;
 	    margin-bottom: 2em !important;
 	    font-weight: bold;
-	    font-family: "Museo Sans", sans-serif;
+	    font-family: "meow_lu";
 	    font-size: 48px;
 	}
 
 	#three h3 {
-		color: #fff;
+		color: #000;
 	    margin-bottom: 2em !important;
 	    font-weight: bold;
-	    font-family: "Museo Sans", sans-serif;
+	    font-family: "meow_lu";
 	    font-size: 25px;
 	}
 
@@ -3137,20 +3143,20 @@
 		color: #ffec01;
 	    margin-bottom: 2em !important;
 	    font-weight: bold;
-	    font-family: "Museo Sans", sans-serif;
+	    font-family: "meow_lu";
 	    font-size: 20px;
 	}
 
 	#three p {
 		margin: 0 0 2em 0;
-		color: #fff;
+		color: #000;
 	}
 
 /* Footer */
 
 	#footer {
 		padding: 6em 0;
-		background: #6cc091;
+		background: #3b7bf7;
 		color: #fff;
 		text-align: center;
 	}
@@ -3159,7 +3165,7 @@
 			color: #ff415e;
 			margin-bottom: 2em !important;
 			font-weight: bold;
-			font-family: "Museo Sans", sans-serif;
+			font-family: "meow_lu";
 			    font-size: 40px;
 		}
 
@@ -3170,7 +3176,7 @@
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: 0.8em;
+			font-size: 1em;
 			margin: 0 0 2em 0;
 			padding: 0;
 		}
@@ -3198,4 +3204,16 @@
 				padding: 3em 0;
 			}
 
+		}
+
+		.hidden{
+		  color: #f5cf08;
+		  display: none;
+		  background-color: #f43b5a;
+		  margin-top: 50px;
+		}
+
+		  .hidden h1{
+		  color: #f5cf08;
+		  font-weight: bold;
 		}
