@@ -10,18 +10,38 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+		    $("#hide").click(function(){
+		        $("#pik").hide();
+		    });
+		    $("#show").click(function(){
+		        $("#pik").show();
+		    });
+		    	    $("#show1").click(function(){
+		        $("#pik").show();
+		    });
+		    	    	    $("#show2").click(function(){
+		        $("#pik").show();
+		    });
+		});
+		</script>
+
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">Logo</a>
+					<a href="index.html" class="logo">LOGO</a>
 					<nav id="nav">
 						<a href="index.html">HOME</a>
 						<a href="index.html#three">PACOTES</a>
-						<a href="generic.html">CONDIÇÕES DE USO</a>
+						<a href="generic.html">LINKS</a>
 						<a href="index.html#footer">CONTATO</a>
+						<a href="#" class="icon fa fa-facebook-square" style="font-size: 20px;"><span class="label">Facebook</span></a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -32,33 +52,36 @@
 				<div class="inner">
 					<header>
 						<img src="images/maleao.png">
-						<h1>EXCURSÃO JOÃO ROCK 2018 <br /> JOBOTICABAL - SP </h1>
+						<h1>EXCURSÃO DA LULU <br /> JOÃO ROCK 2018 </h1>
 					</header>
 
 					<div class="flex ">
 
 						<div>
 							<span class="icon fa-location-arrow"></span>
-							<h3>LOCAL</h3>
-							<p>PQ PERMANENTE DE EXPOSIÇÕES <br /> RIBEIRÃO PRETO - SP</p>
+							<h3>SAÍDA</h3>
+							<p>PRAÇA DA FONTE</p>
+							<p>JABOTICABAL - SP</p>
 						</div>
 
 						<div>
 							<span class="icon fa-calendar-check-o"></span>
-							<h3>DIA</h3>
+							<h3>DIA E LOCAL</h3>
 							<p>09 DE JUNHO DE 2018</p>
+							<p>RIBEIRÃO PRETO - SP</p>
 						</div>
 
 						<div>
 							<span class="icon fa-whatsapp"></span>
-							<h3>TIRE SUAS DÚVIDAS</h3>
+							<h3>DÚVIDAS</h3>
 							<p>+55 16 99999-9999</p>
+							<p>lueneboldrin@hotmail.com</p>
 						</div>
 
 					</div>
 
 					<footer>
-						<a href="#" class="button">LEIA O TERMO DE CONDIÇÕES DE USO</a>
+						<a href="#" class="button">LEIA AS CONDIÇÕES DE USO</a>
 					</footer>
 				</div>
 			</section>
@@ -68,8 +91,9 @@
 			<section id="three" class="wrapper align-center">
 				<div class="inner">
 					<header>
-						<h2>PACOTES</h2>
+						<h2>ESCOLHA SEU PACOTE</h2>
 					</header>
+					<p>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis.</p>
 					<div class="flex flex-3">
 						<article>
 							<div class="image round">
@@ -77,11 +101,11 @@
 							</div>
 							<header>
 								<h3>PACOTE ESTUDANTE</h3>
-								<h4>R$ 100,00</h4>
 							</header>
 							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
 							<footer>
-								<a href="#" class="button">Comprar</a>
+								<a href="#" class="button">COMPRAR NO CARTÃO</a><br/><br/>
+								<button id="show" type="submit">COMPRAR NO DEPÓSITO</button>
 							</footer>
 						</article>
 						<article>
@@ -90,11 +114,11 @@
 							</div>
 							<header>
 								<h3>PACOTE SOLIDÁRIO</h3>
-								<h4>R$ 100,00</h4>
 							</header>
 							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
 							<footer>
-								<a href="#" class="button">Comprar</a>
+								<a href="#" class="button">COMPRAR NO CARTÃO</a><br/><br/>
+								<button id="show1">COMPRAR NO DEPÓSITO</button>
 							</footer>
 						</article>
 						<article>
@@ -102,15 +126,29 @@
 								<img src="images/pic_3.png" alt="Pic 01" />
 							</div>
 							<header>
-								<h3>SOMENTE VIAGEM</h3>
-								<h4>R$ 100,00</h4>
+								<h3>SOMENTE TRANSPORTE</h3>
 							</header>
 							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
 							<footer>
-								<a href="#" class="button">Comprar</a>
+								<a href="#" class="button">COMPRAR NO CARTÃO</a><br/><br/>
+								<button id="show2">COMPRAR NO DEPÓSITO</button>
 							</footer>
 						</article>
 					</div>
+					
+				</div>
+				<div id="pik" class="hidden" >
+					<br/>
+					<h1>Dados para Depósito</h1>
+					Banco xxxx<br/>
+					Tipo: Poupança (operação 013)<br/>
+					Agência: xxx<br/>
+					Conta: xxx<br/>
+					Titular: Luene Marjorie Boldrin<br/>
+
+					<br/>
+					<button id="hide">FECHAR</button><br/>
+					<br/>
 				</div>
 			</section>
 
@@ -139,7 +177,7 @@
 								<p><br />Para obter informações atualizadas sobre o seu pedido ou mudar alguma coisa em um pedido efetuado, entre em contato com o nosso atendimento:<br /><br />
 									
 									Telefone: +55 16 99999-9999<br />
-									E- mail: lulu@lulu.com
+									E- mail: lulu@lulu.com<br />
 								</p>
 							</div>
 						</div>
@@ -149,9 +187,7 @@
 					<div class="copyright">
 						&copy; Excursões da Lulu. Excursão João Rock 2018 (Parceira Oficial).
 						<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#"><span class="label"><img src="images/face-favv1.png"></span></a></li>
 						</ul>
 					</div>
 
