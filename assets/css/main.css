@@ -3120,11 +3120,11 @@
 
 /* Three */
 
-	#three {
+	#pacotes {
 		background-color: #fff;
 	}
 
-	#three h2 {
+	#pacotes h2 {
 		color: #f43b5a;
 	    margin-bottom: -1em !important;
 	    font-weight: bold;
@@ -3132,7 +3132,7 @@
 	    font-size: 48px;
 	}
 
-	#three h3 {
+	#pacotes h3 {
 		color: #000;
 	    margin-bottom: 2em !important;
 	    font-weight: bold;
@@ -3140,7 +3140,7 @@
 	    font-size: 25px;
 	}
 
-		#three h4 {
+	#pacotes h4 {
 		color: #ffec01;
 	    margin-bottom: 2em !important;
 	    font-weight: bold;
@@ -3148,7 +3148,7 @@
 	    font-size: 20px;
 	}
 
-	#three p {
+	#pacotes p {
 		margin: 0 0 2em 0;
 		color: #000;
 	}
