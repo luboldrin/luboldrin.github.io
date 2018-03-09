@@ -2703,7 +2703,7 @@
 	}
 
 		.subpage #header {
-			background: #5d2181;
+			background: #691999;
 			top: 0;
 			height: 60px;
 			line-height: 3.25em;
@@ -2720,12 +2720,16 @@
 		text-align: right;
 		width: 100%;
 		z-index: 10001;
-		background-color: #5d2181;
+		background-color: #691999;
 	}
 
 		#header .inner {
 			margin: 0 auto;
 			position: relative;
+		}
+
+		#header a img {
+			margin-top: 10px;
 		}
 
 		#header .logo {
@@ -2810,7 +2814,7 @@
 	@media screen and (max-width: 736px) {
 
 		#header {
-			top: .5em;
+			top: 0em;
 		}
 
 	}
@@ -2848,7 +2852,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #6cc091;
+		background: #691999;
 		color: #daefe3;
 		height: 100%;
 		max-width: 80%;
@@ -2868,12 +2872,13 @@
 
 		#navPanel a:not(.close) {
 			border-top: solid 1px #8dcca9;
-			color: #daefe3;
+			color: #ffec01;
 			font-weight: 600;
 			display: block;
 			padding: 0.75em 0;
 			text-decoration: none;
 			font-weight: 400;
+			font-family: "meow_lu";
 		}
 
 			#navPanel a:not(.close):first-child {
@@ -2927,7 +2932,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../../images/BANNER02.jpg);
+		background-image: url(../../images/BANNER05.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
