@@ -2298,8 +2298,10 @@
 		}
 
 			ul.alt li {
-				border-top: solid 1px #dbdbdb;
+				color: #000;
 				padding: 0.5em 0;
+				text-transform: uppercase;
+
 			}
 
 				ul.alt li:first-child {
