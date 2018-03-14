@@ -1849,6 +1849,7 @@
 
 			section.wrapper article, article.wrapper article {
 				text-align: center;
+				padding-top: 20px;
 			}
 
 		}
@@ -3160,7 +3161,7 @@
 		color: #000;
 	}
 
-	#pacotes img {
+	#camaleao{
 		padding-top: 40px;
 	}
 
