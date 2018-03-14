@@ -3160,6 +3160,10 @@
 		color: #000;
 	}
 
+	#pacotes img {
+		padding-top: 40px;
+	}
+
 /* Footer */
 
 	#footer {
@@ -3225,4 +3229,8 @@
 		  .hidden h1{
 		  color: #f5cf08;
 		  font-weight: bold;
+		}
+
+		#inner img .camaleao{
+			padding-top: 40px;
 		}
